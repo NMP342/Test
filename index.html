@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        header{
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 5px 8px 5px #a0b4b4;
+        }
+        header span{
+            padding-left: 20px;
+            font-size: 28px;
+        }
+        header a{
+            margin-right: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        header a:first-child{
+            color: red;
+        }
+        .main{
+            margin: 50px auto;
+            background-color: lightskyblue;
+            width: 75%;
+            border-radius: 10px;
+            box-shadow: 5px 8px 5px #a0b4b4;
+        }
+        .photos{
+            display: flex;
+        }
+        .photo{
+            height: 45%;
+            width: 30%;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .photo img{
+            height: 80%;
+            width: 100%;
+            background-color: linen;
+            border-radius: 10px;
+            box-shadow: 5px 8px 5px #a0b4b4;
+        }
+        .name{
+            text-align: center;
+            padding: 18px;
+            font-size: 20px;
+        }
+        @media screen and (max-width: 1000px){
+            .photos{
+                display: inline-block;
+                margin-top: 20px;
+            }
+            .photo{
+                width: 90%;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span>ITPTIT</span>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Thành tích</a>
+            <a href="#">Sự kiện</a>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="photos">
+            <div class="photo">
+                <img src="https://toigingiuvedep.vn/wp-content/uploads/2021/07/hinh-ve-don-gian-sieu-cute-sieu-de-thuong-1.jpg" alt="Thỏ">
+                <div class="name">Thỏ và Cà Rốt</div>
+            </div>
+            <div class="photo">
+                <img src="https://toigingiuvedep.vn/wp-content/uploads/2021/07/hinh-ve-don-gian-sieu-cute-sieu-de-thuong-1.jpg" alt="Thỏ">
+                <div class="name">Thỏ và Cà Rốt</div>
+            </div>
+            <div class="photo">
+                <img src="https://toigingiuvedep.vn/wp-content/uploads/2021/07/hinh-ve-don-gian-sieu-cute-sieu-de-thuong-1.jpg" alt="Thỏ">
+                <div class="name">Thỏ và Cà Rốt</div>
+            </div>
+        </div>
+        <div class="photos">
+            <div class="photo">
+                <img src="https://toigingiuvedep.vn/wp-content/uploads/2021/07/hinh-ve-don-gian-sieu-cute-sieu-de-thuong-1.jpg" alt="Thỏ">
+                <div class="name">Thỏ và Cà Rốt</div>
+            </div>
+            <div class="photo">
+                <img src="https://toigingiuvedep.vn/wp-content/uploads/2021/07/hinh-ve-don-gian-sieu-cute-sieu-de-thuong-1.jpg" alt="Thỏ">
+                <div class="name">Thỏ và Cà Rốt</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
